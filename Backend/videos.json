@@ -1,0 +1,144 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Nature Waterfall",
+      "uploader": "Ethan Carter",
+      "date": "2025-08-10T14:20:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    },
+    {
+      "id": 2,
+      "title": "City Timelapse",
+      "uploader": "Sophia Bennett",
+      "date": "2025-08-09T09:15:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-5s.mp4"
+    },
+    {
+      "id": 3,
+      "title": "Ocean Waves",
+      "uploader": "Liam Rodriguez",
+      "date": "2025-08-08T17:40:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4"
+    },
+    {
+      "id": 4,
+      "title": "Mountain Sunrise",
+      "uploader": "Ava Mitchell",
+      "date": "2025-08-07T06:50:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-10s.mp4"
+    },
+    {
+      "id": 5,
+      "title": "Birds Flying",
+      "uploader": "Mason Walker",
+      "date": "2025-08-06T19:25:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_5mb.mp4"
+    },
+    {
+      "id": 6,
+      "title": "Street Food Market",
+      "uploader": "Olivia Perez",
+      "date": "2025-08-05T13:05:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-15s.mp4"
+    },
+    {
+      "id": 7,
+      "title": "Forest Walk",
+      "uploader": "Noah Harris",
+      "date": "2025-08-04T11:45:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_10mb.mp4"
+    },
+    {
+      "id": 8,
+      "title": "Camping Night",
+      "uploader": "Isabella Brooks",
+      "date": "2025-08-03T21:00:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-20s.mp4"
+    },
+    {
+      "id": 9,
+      "title": "Snowy Mountains",
+      "uploader": "James Parker",
+      "date": "2025-08-02T15:10:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_15mb.mp4"
+    },
+    {
+      "id": 10,
+      "title": "Street Performance",
+      "uploader": "Mia Torres",
+      "date": "2025-08-01T18:35:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-30s.mp4"
+    },
+    {
+      "id": 11,
+      "title": "Drone City View",
+      "uploader": "Benjamin Rivera",
+      "date": "2025-07-31T08:50:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4"
+    },
+    {
+      "id": 12,
+      "title": "Beach Sunset",
+      "uploader": "Charlotte Murphy",
+      "date": "2025-07-30T07:30:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-40s.mp4"
+    },
+    {
+      "id": 13,
+      "title": "Skateboard Tricks",
+      "uploader": "Alexander Foster",
+      "date": "2025-07-29T16:55:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"
+    },
+    {
+      "id": 14,
+      "title": "Rain on Window",
+      "uploader": "Amelia Hughes",
+      "date": "2025-07-28T20:40:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-50s.mp4"
+    },
+    {
+      "id": 15,
+      "title": "Countryside Road",
+      "uploader": "Daniel Reed",
+      "date": "2025-07-27T14:05:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_40mb.mp4"
+    },
+    {
+      "id": 16,
+      "title": "Cooking Pasta",
+      "uploader": "Harper Morgan",
+      "date": "2025-07-26T09:20:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-60s.mp4"
+    },
+    {
+      "id": 17,
+      "title": "Traffic at Night",
+      "uploader": "Matthew Gray",
+      "date": "2025-07-25T22:15:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_50mb.mp4"
+    },
+    {
+      "id": 18,
+      "title": "Boat Ride",
+      "uploader": "Ella Cooper",
+      "date": "2025-07-24T12:00:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-70s.mp4"
+    },
+    {
+      "id": 19,
+      "title": "Park Walk",
+      "uploader": "Lucas Adams",
+      "date": "2025-07-23T18:25:00Z",
+      "url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_60mb.mp4"
+    },
+    {
+      "id": 20,
+      "title": "Rainforest Birds",
+      "uploader": "Grace Thompson",
+      "date": "2025-07-22T07:55:00Z",
+      "url": "https://sample-videos.com/video321/mp4/720/sample-90s.mp4"
+    }
+  ]
+}
