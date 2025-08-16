@@ -7,6 +7,7 @@ export default function VideoCard({ video, currentUser }) {
       try{
         let res=await axios.delete(`http://localhost:3000/videos/${video.id}`,{method:"DELETE"})
         console.log(res.data);
+        onDelete(video.id)
         alert("video deleted successfully")  
       }catch(err){
         console.log("unable to delete: ",err.message)

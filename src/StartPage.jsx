@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const StartPage = () => {
-
     document.body.style.backgroundColor='#7198AD'
   return (
     <div style={{ textAlign: 'center', marginTop: '50px'}}>

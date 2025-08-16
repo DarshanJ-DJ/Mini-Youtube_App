@@ -23,18 +23,17 @@ export default function Home({ currentUser }) {
   return (
     <div style={{ padding: "20px" }}>
       <nav style={{ display: "flex", gap: "20px", background: "#eee", padding: "10px" }}>
-        {/* <button onClick={() => setPage("home")}>Home</button> */}
         <button onClick={() => setPage("upload")}>Upload</button>
         <button onClick={() => setPage("profile")}>Profile</button>
       </nav>
 
-      {/* {page === "home" && <Home currentUser={currentUser} />} */}
       {page === "upload" && <Upload currentUser={currentUser} />}
       {page === "profile" && <Profile currentUser={currentUser} />}
       <h2>All Videos</h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
         {videos.map(video => (
-          <VideoCard key={video.id} video={video} currentUser={currentUser} />
+          <VideoCard key={video.id} video={video} currentUser={currentUser}
+          onDelete={(id)=>setVideos(videos.filter(v => v.id!==id))} />
         ))}
       </div>
     </div>
