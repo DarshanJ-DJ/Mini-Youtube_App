@@ -7,6 +7,8 @@ import Home from './Components/Home'
 import Upload from './Components/Upload'
 import Profile from './Components/Profile'
 import VideoCard from './Components/VideoCard'
+import SecureRoute from './Components/SecureRoute'
+import VideoPlayer from './Components/VideoPlayer'
 
 const App = () => {
   let[currentUser,setCurrentUser]=useState(null)
@@ -17,10 +19,20 @@ const App = () => {
         <Route path="/" element={<StartPage/>} />
         <Route path="/login" element={<Login setCurrentUser={setCurrentUser}></Login>} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Home currentUser={currentUser}></Home>} />
-        <Route path="/upload" element={<Upload currentUser={currentUser}></Upload>} />
-        <Route path="/profile" element={<Profile currentUser={currentUser}></Profile>} />
+        <Route path="/home" element={<SecureRoute currentUser={currentUser}>
+          <Home currentUser={currentUser}></Home>
+          </SecureRoute>} />
+        <Route path="/upload" element={<SecureRoute currentUser={currentUser}>
+          <Profile currentUser={currentUser}></Profile>
+          </SecureRoute>}  />
+        <Route path="/profile" element={<SecureRoute currentUser={currentUser}>
+          <Upload currentUser={currentUser}></Upload>
+          </SecureRoute>} />
         <Route path="/videocard" element={<VideoCard currentUser={currentUser}></VideoCard>} />
+
+        <Route path="/video/:id" element={<SecureRoute currentUser={currentUser}>
+          <VideoPlayer currentUser={currentUser} />
+          </SecureRoute>}/>
       </Routes>
     </Router> 
     </div>

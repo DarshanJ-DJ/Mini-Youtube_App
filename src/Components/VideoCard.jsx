@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function VideoCard({ video, currentUser }) {
   const handleDelete = async() => {
@@ -17,14 +18,23 @@ export default function VideoCard({ video, currentUser }) {
 
   return (
     <div style={{ border: "1px solid #ccc", padding: "10px" }}>
-      <video src={video.url} controls style={{ width: "100%" }} />
-      <h4>{video.title}</h4>
+      {/* Thumbnail instead of full video */}
+      <Link to={`/video/${video.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+        <img src={video.cover || "/uploads/default_cover.jpg"}  // fallback if no cover
+          alt={video.title} style={{ width: "100%", height: "200px", objectFit: "cover" }} />
+        <h4>{video.title}</h4>
+      </Link>
+
       <p>Uploaded by: {video.uploader}</p>
       <p>Date: {new Date(video.date).toLocaleString()}</p>
+
+      {/* Only uploader can delete */}
       {currentUser === video.uploader && (
-        <button onClick={handleDelete} style={{ background: "red", color: "white" }}>Delete</button>
+        <button onClick={handleDelete} style={{ background: "red", color: "white" }}> Delete</button>
       )}
-      <a href={video.url} download style={{ display: "block", marginTop: "10px" }}>Download</a>
+
+      {/* Download option */}
+      <a href={video.url} download style={{ display: "block", marginTop: "10px" }}> Download </a>
     </div>
   );
 }

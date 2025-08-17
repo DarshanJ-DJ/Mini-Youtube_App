@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
-const Login = () => {
+const Login = ({setCurrentUser}) => {
   let [login, setLogin] = useState({ Email: "", Password: "" })
 
   let navigate = useNavigate()
@@ -21,8 +21,11 @@ const Login = () => {
         (element) =>
           element.Email === login.Email && element.Password === login.Password);
       if (user) {
-        alert("Login successful",user.Username);
-        navigate("/home")
+        setCurrentUser(user)
+        alert(`Login successful, welcome ${user.Username}`);
+        // setTimeout(() => {
+            navigate("/home");
+        // }, 100);
         return
       } else {
         alert("Invalid credentials");
@@ -39,12 +42,12 @@ const Login = () => {
       <h1>Login page</h1>
       <form onSubmit={handleSubmit}>
         <label>EMAIL</label>
-        <input type="email" name="Email" onChange={handleChange} /><br />
+        <input type="email" name="Email" value={login.Email} onChange={handleChange} /><br />
         <label>PASSWORD</label>
-        <input type="password" name="Password" onChange={handleChange} /><br />
+        <input type="password" name="Password" value={login.Password} onChange={handleChange} /><br />
         <input type="submit" value="LOGIN" /><br />
       </form>
-      <p><Link to="/home">FORGOT PASSWORD......!!</Link></p>
+      <p><Link to="/">FORGOT PASSWORD......!!</Link></p>
     </div>
   )
 }
